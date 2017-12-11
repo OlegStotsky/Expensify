@@ -15,8 +15,7 @@ store.subscribe(() => {
 });
 store.dispatch(addExpense({description: 'rent', amount: 500}));
 store.dispatch(addExpense({description: 'water', amount: 200}));
-store.dispatch(setTextFilter('rent'));
-console.log(getVisibleExpenses(store.getState().expenses, store.getState().filters));
+store.dispatch(addExpense({description: 'gas bill', createdAt: 1000}));
 
 const jsx = (
   <Provider store={store}>
