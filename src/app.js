@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom'; 
 import AppRouter from './routers/AppRouter.js';
 import { Provider } from 'react-redux';
+import 'react-dates/initialize';
 import configureStore from './store/configureStore.js';
 import { addExpense } from './actions/expenses.js';
 import { setTextFilter } from './actions/filters.js';
