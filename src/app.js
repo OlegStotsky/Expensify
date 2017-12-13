@@ -11,12 +11,6 @@ import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 
 const store = configureStore();
-store.subscribe(() => {
-  console.log(store.getState());
-});
-store.dispatch(addExpense({description: 'rent', amount: 500}));
-store.dispatch(addExpense({description: 'water', amount: 200}));
-store.dispatch(addExpense({description: 'gas bill', createdAt: 1000}));
 
 const jsx = (
   <Provider store={store}>
